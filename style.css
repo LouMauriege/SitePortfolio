@@ -1,0 +1,56 @@
+/*--Reset--*/
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+ol, ul, menu {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+textarea {
+    white-space: revert;
+}
+::placeholder {
+    color: unset;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+/*--Import--*/
+@font-face {
+    font-family: "ApfelGrotezk-Fett";
+    src: url("webfont/ApfelGrotezk-Fett.woff2") format("woff2"),
+         url("webfont/ApfelGrotezk-Fett.woff") format("woff");
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:ital,wght@0,700;1,300&display=swap');
+
+
+/*--Stylisation--*/
+#experiences {
+    color: #9b1616;
+    stroke: #9b1616;
+}
+.fleche {
+    fill: none;
+    stroke-width: 8;
+    stroke-miterlimit: 10;
+}
+
+/*
+@keyframes rotationTitre {
+    from { transform: rotate(0turn); }
+    to   { transform: rotate(1turn); }
+}
+#formation {
+    background-color: bisque;
+    animation: 10s linear rotationTitre infinite;
+}
+
+#formation:hover {
+    animation-play-state: paused;
+}
