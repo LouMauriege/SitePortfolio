@@ -18,7 +18,6 @@ textarea {
 body{
     margin: 0;
     padding: 0;
-    background-color: beige;
 }
 
 /*--Import--*/
@@ -31,26 +30,91 @@ body{
 
 
 /*--Stylisation--*/
+html {
+    font-size: 62,5%; /* = font-size: 10px */
+}
+body {
+    background-color: #323232;
+    font-size: ;
+}
 #experiences {
-    color: #9b1616;
-    stroke: #9b1616;
+    color: #0fd49a;
+    stroke: #0fd49a;
+}
+#formation {
+    color: #f1cb85;
+    stroke: #f1cb85;
+}
+h2 {
+    font-family: "ApfelGrotezk-Fett", 'Roboto', sans-serif;
+}
+#experiences h2{
+    font-size: 1.54rem;
+}
+#formation h2 {
+    font-size: 1.4rem;
+}
+.date {
+    font-family: "Roboto Slab", serif;
+    font-weight: 200;
+    font-variant-caps: small-caps;
+    font-size: 1.2rem;
+}
+.sujet {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.details {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.title {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
 }
 .fleche {
     fill: none;
     stroke-width: 8;
     stroke-miterlimit: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(55%);
+}
+#formation .fleche {
+    transform: translate(-50%, -50%) scale(55%) rotate(90deg);
 }
 
-/*
-@keyframes rotationTitre {
-    from { transform: rotate(0turn); }
-    to   { transform: rotate(1turn); }
+aside {
+    border-bottom: 2px solid;
 }
-#formation {
-    background-color: bisque;
+aside > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+aside > div > div {
+    flex: 1;
+    padding: 1rem;
+    border-right: 2px solid;
+}
+aside > div > div:last-child {
+    border-right: none;
+}
+
+@keyframes rotationTitre {
+    from { transform: rotate(1turn); }
+    to   { transform: rotate(0turn); }
+}
+h2{
     animation: 10s linear rotationTitre infinite;
 }
-
-#formation:hover {
+h2:hover {
     animation-play-state: paused;
 }
