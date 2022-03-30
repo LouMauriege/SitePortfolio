@@ -35,7 +35,6 @@ html {
 }
 body {
     background-color: #323232;
-    font-size: ;
 }
 #experiences {
     color: #0fd49a;
@@ -83,14 +82,25 @@ h2 {
     stroke-width: 8;
     stroke-miterlimit: 10;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(55%);
 }
-#formation .fleche {
+#experiences .fleche {
     transform: translate(-50%, -50%) scale(55%) rotate(90deg);
 }
 
+article {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+article .featured{
+    flex-grow: 1;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
 aside {
     border-bottom: 2px solid;
 }
