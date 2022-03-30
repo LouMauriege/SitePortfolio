@@ -113,7 +113,7 @@ aside > div > div:last-child {
     to   { transform: rotate(0turn); }
 }
 h2{
-    animation: 10s linear rotationTitre infinite;
+    animation: 17s linear rotationTitre infinite;
 }
 h2:hover {
     animation-play-state: paused;
