@@ -44,8 +44,13 @@ body {
     color: #f1cb85;
     stroke: #f1cb85;
 }
+#outils {
+    color: #0fc3d4;
+}
 h2 {
-    font-family: "ApfelGrotezk-Fett", 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 #experiences h2{
     font-size: 1.54rem;
@@ -60,8 +65,7 @@ h2 {
     font-size: 1.2rem;
 }
 .sujet {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-family: "ApfelGrotezk-Fett", 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 1.1rem;
 }
@@ -91,7 +95,7 @@ h2 {
 }
 
 article {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
 }
@@ -106,25 +110,52 @@ aside {
 }
 aside > div {
     display: flex;
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 aside > div > div {
-    flex: 1;
+    flex: 2;
     padding: 1rem;
     border-right: 2px solid;
 }
 aside > div > div:last-child {
     border-right: none;
+    flex: 1;
+}
+#outils {
+    width: 60%;
+    margin: auto;
+}
+#outils h2 {
+    width: max-content;
+    border: 4px solid;
+    padding: .1rem .4rem;
+    border-radius: 2rem;
+    /* border-radius: 50%; */
+}
+#outils article {
+    margin: 0;
+    width: 100%;
+    align-items: flex-end;
+}
+#outils div {
+    flex: 2;
+    padding: 1rem;
+}
+#outils div:last-child {
+    flex: 1;
+}
+#outils .details{
+    padding-left: .7rem;
 }
 
 @keyframes rotationTitre {
     from { transform: rotate(1turn); }
     to   { transform: rotate(0turn); }
 }
-h2{
+.circulaire{
     animation: 17s linear rotationTitre infinite;
 }
-h2:hover {
+.circulaire:hover {
     animation-play-state: paused;
 }
