@@ -100,9 +100,9 @@ a:hover {
     transform: translate(-50%, -50%) scale(55%);
 }
 article {
+    display: flex;
     width: 60%;
     margin: auto;
-    display: flex;
 }
 article .featured{
     flex-grow: 1;
@@ -119,16 +119,37 @@ aside > div {
     margin: auto;
 }
 aside > div > div {
-    flex: 2;
-    padding: 1rem;
+    flex: 1;
+    padding: 0 1rem 1rem 1rem;
     border-right: 2px solid;
 }
 aside > div > div:last-child {
     border-right: none;
-    flex: 1;
+    padding-right: 0;
 }
 
 
+/*--Breakpoints--*/
+
+/* @media screen and (max-width: 1265px) {
+    article, aside > div {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 950px) {
+    article, aside > div {
+        width: 100%;
+    }
+} */
+    /*--Mobile--*/ 
+/* @media screen and (max-width: 375px) {
+    body {
+        background-color: #0fd49a;
+    }
+} */
+
+
+/*--Cas particuliers--*/
 #profil aside {
     border : none;
 }
@@ -150,40 +171,29 @@ aside > div > div:last-child {
 }
 
 
-
 #experiences .fleche {
     transform: translate(-50%, -50%) scale(55%) rotate(90deg);
 }
 
-
-#outils {
-    width: 60%;
-    margin: auto;
+#outils aside div, #outils aside {
+    border: none;
 }
 #outils h2 {
     width: max-content;
+    align-self: flex-start;
     border: 4px solid;
     padding: .1rem .4rem;
     border-radius: 2rem;
-    /* border-radius: 50%; */
 }
-#outils article {
-    margin: 0;
-    width: 100%;
+#outils aside > div {
     align-items: flex-end;
-}
-#outils div {
-    flex: 2;
-    padding: 1rem;
-}
-#outils div:last-child {
-    flex: 1;
 }
 #outils .details{
     padding-left: .7rem;
 }
 
 
+/*--Animations--*/
 @keyframes rotationTitre {
     from { transform: rotate(1turn); }
     to   { transform: rotate(0turn); }
