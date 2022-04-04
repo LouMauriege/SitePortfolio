@@ -68,17 +68,25 @@ h2 {
     font-weight: 200;
     font-variant-caps: small-caps;
     font-size: 1.2rem;
+
+    margin-bottom: 1rem;
 }
 .sujet {
     font-family: "ApfelGrotezk-Fett", 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 1.1rem;
+
+    margin-bottom: 1rem;
 }
 .details {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 1rem;
+    padding-bottom: .2rem;
+}
+div > .details:nth-child(4) {
+    padding-left: 1rem;
 }
 
 
@@ -105,6 +113,9 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%) scale(55%);
 }
+section {
+    margin-top: 4rem;
+}
 article {
     display: flex;
     width: 60%;
@@ -118,6 +129,7 @@ article .featured{
 }
 aside {
     border-bottom: 2px solid;
+    margin-top: 2rem;
 }
 aside > div {
     display: flex;
@@ -190,6 +202,7 @@ aside > div > div:last-child {
     border: 4px solid;
     padding: .1rem .4rem;
     border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 #outils aside > div {
     align-items: flex-end;
