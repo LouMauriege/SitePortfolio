@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:ital,wght@0,700;1,300&display=swap');
+@font-face {
+    font-family: "ApfelGrotezk-Fett";
+    src: url("webfont/ApfelGrotezk-Fett.woff2") format("woff2"),
+         url("webfont/ApfelGrotezk-Fett.woff") format("woff");
+}
+/*-^Import^-*/
+
+
 /*--Reset--*/
 *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
     all: unset;
@@ -20,15 +29,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
-/*--Import--*/
-@font-face {
-    font-family: "ApfelGrotezk-Fett";
-    src: url("webfont/ApfelGrotezk-Fett.woff2") format("woff2"),
-         url("webfont/ApfelGrotezk-Fett.woff") format("woff");
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:ital,wght@0,700;1,300&display=swap');
-
 
 /*--Stylisation--*/
 html {
@@ -168,11 +168,45 @@ aside > div > div:last-child {
 
 
 /*--Cas particuliers--*/
-#profil aside {
-    border : none;
+#profil {
+    padding-bottom: 1rem;
+}
+#profil aside, #profil div {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+#profil aside > div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#profil aside > div > div, #profil img {
+    height: 15rem;
+}
+#profil aside > div > div {
+    position: relative;
+    height: fit-content;
+}
+div#coordonnees {
+    margin-left: 1rem;
 }
 #profil img {
-    width: 70%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    border: 4px solid;
+    border-radius: .5rem;
+}
+
+/*
+#profil aside > div {
+    
+    height: 30rem; 
+}
+#profil img {
+    /* width: 70%; *//*
     margin-left: 25%;
     border: 4px solid;
     border-radius: .5rem;
@@ -186,12 +220,24 @@ aside > div > div:last-child {
     position: absolute;
     bottom: 0;
     padding: 1rem;
-}
+} */
 
 
 #experiences .fleche {
     transform: translate(-50%, -50%) scale(55%) rotate(90deg);
 }
+
+
+.featured .date {
+    margin: 0 0.2rem 0 0;
+}
+.featured .sujet {
+    margin: 0 0.2rem 0 0;
+}
+.featured .details {
+    padding: 0.1rem 0 0 0;
+}
+
 
 #outils aside div, #outils aside {
     border: none;
@@ -209,6 +255,9 @@ aside > div > div:last-child {
 }
 #outils .details{
     padding-left: .7rem;
+}
+#outils {
+    margin-bottom: 4rem;
 }
 
 
