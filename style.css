@@ -181,11 +181,9 @@ aside > div > div:last-child {
 }
     /*--Mobile--*/
 @media screen and (max-width: 520px) {
-    body {
-        background-color: black;
-    }
     aside {
         margin-left: 2rem;
+        margin-right: 2rem;
         border-bottom: none;
         border-left: 2px solid;
     }
@@ -194,6 +192,7 @@ aside > div > div:last-child {
     }
     aside > div > div {
         margin-top: 1rem;
+        padding-right: 0;
         border-right: none;
         border-bottom: 2px solid;
     }
@@ -212,6 +211,12 @@ aside > div > div:last-child {
     .featured > .date, .featured > .sujet, .featured > .details {
         margin-left: 0;
         padding-left: 0;
+    }
+    #outils h2 {
+        transform: translateX(-1.8rem);
+    }
+    #outils aside > div > div {
+        align-self: flex-start;
     }
 }
 
