@@ -32,12 +32,16 @@ body{
 
 /*--Stylisation--*/
 html {
-    font-size: 62,5%; /* = font-size: 10px */
+    font-size: 62,5%; /* = font-size: 10px = 1rem */
 }
 body {
     background-color: #323232;
 }
 #profil {
+    color: #fe6d73;
+    stroke: #fe6d73;
+}
+#profil a {
     color: #fe6d73;
     stroke: #fe6d73;
 }
@@ -68,14 +72,12 @@ h2 {
     font-weight: 200;
     font-variant-caps: small-caps;
     font-size: 1.2rem;
-
     margin-bottom: 1rem;
 }
 .sujet {
     font-family: "ApfelGrotezk-Fett", 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 1.1rem;
-
     margin-bottom: 1rem;
 }
 .details {
@@ -149,27 +151,75 @@ aside > div > div:last-child {
 
 
 /*--Breakpoints--*/
-
-/* @media screen and (max-width: 1265px) {
+@media screen and (max-width: 1250px) {
     article, aside > div {
         width: 80%;
     }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 930px) {
     article, aside > div {
         width: 100%;
     }
-} */
-    /*--Mobile--*/ 
-/* @media screen and (max-width: 375px) {
-    body {
-        background-color: #0fd49a;
+    .title {
+        transform: translateX(+10%);
     }
-} */
+    #outils h2 {
+        transform: translateX(0%);
+    }
+    .featured {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .featured *{
+        align-self: flex-start;
+    }
+    .featured > .date, .featured > .sujet, .featured > .details {
+        margin-left: 2rem;
+        padding-left: 2rem;
+        padding-bottom: .5rem;
+    }
+}
+    /*--Mobile--*/
+@media screen and (max-width: 520px) {
+    body {
+        background-color: black;
+    }
+    aside {
+        margin-left: 2rem;
+        border-bottom: none;
+        border-left: 2px solid;
+    }
+    aside > div {
+        flex-direction: column;
+    }
+    aside > div > div {
+        margin-top: 1rem;
+        border-right: none;
+        border-bottom: 2px solid;
+    }
+    aside > div > div:last-child {
+        border-bottom: none;
+    }
+    #formation .fleche {
+        transform: translate(-50%, -50%) scale(55%) rotate(90deg);
+    }
+    #formation article {
+        flex-direction: column;
+    }
+    .featured {
+        padding: 2rem 0 0 1rem;
+    }
+    .featured > .date, .featured > .sujet, .featured > .details {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
 
 
 /*--Cas particuliers--*/
 #profil {
+    margin-top: 0;
+    padding-top: 4rem;
     padding-bottom: 1rem;
 }
 #profil aside, #profil div {
@@ -200,28 +250,6 @@ div#coordonnees {
     border: 4px solid;
     border-radius: .5rem;
 }
-
-/*
-#profil aside > div {
-    
-    height: 30rem; 
-}
-#profil img {
-    /* width: 70%; *//*
-    margin-left: 25%;
-    border: 4px solid;
-    border-radius: .5rem;
-}
-#profil aside > div > div {
-    border: none;
-    position: relative;
-    padding: 0;
-}
-#profil aside > div > div > div {
-    position: absolute;
-    bottom: 0;
-    padding: 1rem;
-} */
 
 
 #experiences .fleche {
@@ -258,7 +286,8 @@ div#coordonnees {
     padding-left: .7rem;
 }
 #outils {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
 }
 
 
