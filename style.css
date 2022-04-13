@@ -101,6 +101,28 @@ h2 {
 a:hover {
     cursor: pointer;
 }
+.bouton1, .bouton2 {
+    display: block;
+    width: fit-content;
+    padding: .5rem .7rem .55rem .7rem;
+    border-radius: .3rem;
+    border: solid 3px;
+}
+#profil .bouton2 {
+    transition: all 0.3s ease-in-out;
+}
+#profil .bouton1, #profil .bouton2:hover {
+    background-color: #fe6d73;
+    color: #323232;
+    border-color: #fe6d73;
+    transition: all 0.3s ease-in-out;
+}
+#profil .bouton1:hover {
+    background-color: #323232;
+    color: #fe6d73;
+    border-color: #fe6d73;
+    transition: all 0.3s ease-in-out;
+}
 .title {
     position: relative;
     width: 10rem;
@@ -307,6 +329,9 @@ div#coordonnees {
     }
     #profil #coordonnees > * {
         text-align: center ;
+    }
+    .bouton1, .bouton2 {
+        margin: auto;
     }
     #formation .fleche {
         transform: translate(-50%, -50%) scale(55%) rotate(90deg);
