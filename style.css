@@ -261,6 +261,7 @@ div#coordonnees {
 
 
 /*--Breakpoints--*/
+/*------CV-------*/
 @media screen and (max-width: 1250px) {
     article, aside > div {
         width: 80%;
@@ -310,9 +311,6 @@ div#coordonnees {
         border-bottom: none;
     }
 
-    /* #profil div {
-        margin: auto;
-    } */
     #profil div > div {
         width: 100%;
     }
@@ -352,4 +350,46 @@ div#coordonnees {
     #outils aside > div > div {
         align-self: flex-start;
     }
+}
+
+/*--Portfolio--*/
+div.container {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    margin: 0 1rem;
+}
+article.portfolio {
+    display: block;
+    margin-bottom: 3rem;
+
+    /* grid-column: 1 / 4; */
+}
+article.portfolio * {
+    transform: none;
+}
+article.portfolio > * {
+    margin-bottom: 0.3rem;
+}
+article.portfolio > div {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 1.7rem;
+}
+article.portfolio h2 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+article.portfolio svg {
+    margin-left: .3rem;
+}
+.variant1 {
+    grid-column: 1 / 4;
+}
+.variant2 {
+    grid-column: 2 / 5;
 }
