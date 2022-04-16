@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
 @font-face {
     font-family: "ApfelGrotezk-Fett";
     src: url("webfont/ApfelGrotezk-Fett.woff2") format("woff2"),
          url("webfont/ApfelGrotezk-Fett.woff") format("woff");
 }
+
 /*-^Import^-*/
 
 
@@ -108,16 +109,16 @@ a:hover {
     border-radius: .3rem;
     border: solid 3px;
 }
-#profil .bouton2 {
+.bouton2 {
     transition: all 0.3s ease-in-out;
 }
-#profil .bouton1, #profil .bouton2:hover {
+.bouton1, .bouton2:hover {
     background-color: #fe6d73;
     color: #323232;
     border-color: #fe6d73;
     transition: all 0.3s ease-in-out;
 }
-#profil .bouton1:hover {
+.bouton1:hover {
     background-color: #323232;
     color: #fe6d73;
     border-color: #fe6d73;
@@ -353,6 +354,19 @@ div#coordonnees {
 }
 
 /*--Portfolio--*/
+nav {
+    color: #fe6d73;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+nav > p {
+    margin: 1rem;
+}
+.container > article:first-child {
+    padding-top: 5rem;
+}
 div.container {
     display: grid;
     grid-template: 1fr / repeat(4, 1fr);
@@ -386,6 +400,12 @@ article.portfolio h2 {
 }
 article.portfolio svg {
     margin-left: .3rem;
+}
+.description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
 }
 .variant1 {
     grid-column: 1 / 4;
