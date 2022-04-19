@@ -375,11 +375,10 @@ div.container {
 article.portfolio {
     display: block;
     margin-bottom: 3rem;
-
-    /* grid-column: 1 / 4; */
 }
 article.portfolio * {
     transform: none;
+    color: #fe6d73;
 }
 article.portfolio > * {
     margin-bottom: 0.3rem;
@@ -401,6 +400,10 @@ article.portfolio h2 {
 article.portfolio svg {
     margin-left: .3rem;
 }
+article.portfolio iframe {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
 .description {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -412,4 +415,7 @@ article.portfolio svg {
 }
 .variant2 {
     grid-column: 2 / 5;
+}
+#visionworld iframe {
+    aspect-ratio: 16 / 9;
 }
