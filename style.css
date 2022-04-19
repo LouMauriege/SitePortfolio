@@ -355,6 +355,7 @@ div#coordonnees {
 
 /*--Portfolio--*/
 nav {
+    z-index: +1;
     color: #fe6d73;
     width: 100%;
     position: fixed;
