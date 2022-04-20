@@ -375,7 +375,7 @@ div.container {
 }
 article.portfolio {
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 article.portfolio * {
     transform: none;
