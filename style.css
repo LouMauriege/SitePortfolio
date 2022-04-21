@@ -42,10 +42,6 @@ body {
     color: #fe6d73;
     stroke: #fe6d73;
 }
-#profil a {
-    color: #fe6d73;
-    stroke: #fe6d73;
-}
 #experiences {
     color: #0fd49a;
     stroke: #0fd49a;
@@ -111,9 +107,6 @@ a:hover {
 }
 .bouton2 {
     transition: all 0.3s ease-in-out;
-}
-#profil .bouton1 {
-    color: #323232;
 }
 .bouton1, .bouton2:hover {
     background-color: #fe6d73;
