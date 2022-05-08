@@ -23,6 +23,18 @@ img {
 textarea {
     white-space: revert;
 }
+::-webkit-input-placeholder {
+    color: unset;
+}
+::-moz-placeholder {
+    color: unset;
+}
+:-ms-input-placeholder {
+    color: unset;
+}
+::-ms-input-placeholder {
+    color: unset;
+}
 ::placeholder {
     color: unset;
 }
@@ -90,9 +102,11 @@ div > .details:nth-child(4) {
 
 
 h2 {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 .title {
+    -webkit-transform: translateX(-40%);
     transform: translateX(-40%);
 }
 a:hover {
@@ -100,6 +114,8 @@ a:hover {
 }
 .bouton1, .bouton2 {
     display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: .5rem .7rem .55rem .7rem;
     border-radius: .3rem;
@@ -132,6 +148,7 @@ a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(55%);
     transform: translate(-50%, -50%) scale(55%);
     z-index: -1;
 }
@@ -204,6 +221,7 @@ div#coordonnees {
 
 
 #experiences .fleche {
+    -webkit-transform: translate(-50%, -50%) scale(55%) rotate(90deg);
     transform: translate(-50%, -50%) scale(55%) rotate(90deg);
 }
 
@@ -223,6 +241,8 @@ div#coordonnees {
     border: none;
 }
 #outils h2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     align-self: flex-start;
     border: 4px solid;
@@ -243,15 +263,21 @@ div#coordonnees {
 
 
 /*--Animations--*/
+@-webkit-keyframes rotationTitre {
+    from { transform: rotate(1turn); }
+    to   { transform: rotate(0turn); }
+}
 @keyframes rotationTitre {
     from { transform: rotate(1turn); }
     to   { transform: rotate(0turn); }
 }
 .circulaire{
-    animation: 17s linear rotationTitre infinite;
+    -webkit-animation: 17s linear rotationTitre infinite;
+            animation: 17s linear rotationTitre infinite;
 }
 .circulaire:hover {
-    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 
@@ -267,9 +293,11 @@ div#coordonnees {
         width: 100%;
     }
     .title {
+        -webkit-transform: translateX(+10%);
         transform: translateX(+10%);
     }
     #outils h2 {
+        -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
     .featured {
@@ -311,9 +339,13 @@ div#coordonnees {
     }
     #profil img {
         width: 90%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         position: static;
+        -webkit-transform: translateY(-10%);
         transform: translateY(-10%);
         margin:0 3.5%;
     }
@@ -330,6 +362,7 @@ div#coordonnees {
         font-size: 1.3rem;;
     }
     #formation .fleche {
+        -webkit-transform: translate(-50%, -50%) scale(55%) rotate(90deg);
         transform: translate(-50%, -50%) scale(55%) rotate(90deg);
     }
     #formation article {
@@ -343,6 +376,7 @@ div#coordonnees {
         padding-left: 0;
     }
     #outils h2 {
+        -webkit-transform: translateX(-1.8rem);
         transform: translateX(-1.8rem);
     }
     #outils aside > div > div {
@@ -375,6 +409,7 @@ article.portfolio {
     margin-bottom: 5rem;
 }
 article.portfolio * {
+    -webkit-transform: none;
     transform: none;
     color: #fe6d73;
 }
@@ -393,6 +428,7 @@ article.portfolio h2 {
     position: absolute;
     top: 50%;
     left: 0;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 article.portfolio svg {
