@@ -147,7 +147,7 @@ a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(55%);
+    -webkit-transform: translate(-50%, -50%) scale(55%, 55%);
     transform: translate(-50%, -50%) scale(55%);
     z-index: -1;
 }
@@ -227,7 +227,7 @@ div#coordonnees {
 
 
 #experiences .fleche {
-    -webkit-transform: translate(-50%, -50%) scale(55%) rotate(90deg);
+    -webkit-transform: translate(-50%, -50%) scale(55%, 55%) rotate(90deg);
     transform: translate(-50%, -50%) scale(55%) rotate(90deg);
 }
 
@@ -368,7 +368,7 @@ div#coordonnees {
         font-size: 1.3rem;;
     }
     #formation .fleche {
-        -webkit-transform: translate(-50%, -50%) scale(55%) rotate(90deg);
+        -webkit-transform: translate(-50%, -50%) scale(55%, 55%) rotate(90deg);
         transform: translate(-50%, -50%) scale(55%) rotate(90deg);
     }
     #formation article {
