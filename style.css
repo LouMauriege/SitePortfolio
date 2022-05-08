@@ -190,7 +190,6 @@ aside > div > div:last-child {
 }
 #profil aside > div > div {
     position: relative;
-    height: fit-content;
 }
 div#coordonnees {
     margin-left: 1rem;
@@ -326,6 +325,9 @@ div#coordonnees {
     }
     .bouton1, .bouton2 {
         margin: auto;
+    }
+    p.date > a.bouton1, p.date > a.bouton2 {
+        font-size: 1.3rem;;
     }
     #formation .fleche {
         transform: translate(-50%, -50%) scale(55%) rotate(90deg);
