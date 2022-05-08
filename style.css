@@ -51,7 +51,7 @@ body {
     background-color: #323232;
 }
 #profil {
-    color: #fe6d73;
+    color: hsl(358, 99%, 71%);
     stroke: #fe6d73;
 }
 #experiences {
@@ -99,7 +99,6 @@ h2 {
 div > .details:nth-child(4) {
     padding-left: 1rem;
 }
-
 
 h2 {
     -webkit-transform: translateX(-50%);
@@ -210,6 +209,13 @@ aside > div > div:last-child {
 }
 div#coordonnees {
     margin-left: 1rem;
+}
+#profil .fa-brands:hover {
+    color: hsl(358, 99%, 71%);
+    transition: color .2s ease-in-out;
+}
+#profil .fa-brands:hover {
+    color: hsl(358, 99%, 81%);
 }
 #profil img {
     position: absolute;
