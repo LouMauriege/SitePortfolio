@@ -432,10 +432,7 @@ article.portfolio > div {
 article.portfolio h2 {
     font-size: 1.5rem;
     position: absolute;
-    top: 50%;
     left: 0;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 article.portfolio svg {
     margin-left: .3rem;
