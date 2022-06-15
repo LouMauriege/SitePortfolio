@@ -78,10 +78,8 @@
         <article>
             <div class="title">
                 <h2 class="circulaire">&zwnj; &zwnj; MA FORMATION&zwnj; &zwnj; MA FORMATION</h2>
-                <svg class="fleche" viewBox="0 0 85 70" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0" y1="35" x2="85" y2="35" />
-                    <path d="M50,70c0-19.33,15.67-35,35-35" />
-                    <path d="M85,35C65.67,35,50,19.33,50,0" />
+                <svg class="fleche" viewBox="0 0 85 70">
+                    <use href="#fleche" xlink:href="#fleche" />
                 </svg>
             </div>
             <div class="featured">
@@ -149,6 +147,15 @@
 
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/9ac4f06736.js" crossorigin="anonymous"></script>
+
+    <!-- Bibliothèque de SVG -->
+    <svg>
+        <symbol id="fleche"> <!-- 85 70 -->
+            <line x1="0" y1="35" x2="85" y2="35" />
+            <path d="M50,70c0-19.33,15.67-35,35-35" />
+            <path d="M85,35C65.67,35,50,19.33,50,0" />
+        </symbol>
+    </svg>
 
     <!--Mes scripts-->
     <script src="script.js"></script>
