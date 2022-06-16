@@ -369,8 +369,8 @@ div#coordonnees {
         font-size: 1.3rem;;
     }
     #formation .fleche {
-        -webkit-transform: translate(-50%, -50%) scale(55%, 55%) rotate(90deg);
-        transform: translate(-50%, -50%) scale(55%) rotate(90deg);
+        -webkit-transform: translate(-50%, -50%) rotate(90deg);
+        transform: translate(-50%, -50%) rotate(90deg);
     }
     #formation article {
         flex-direction: column;
